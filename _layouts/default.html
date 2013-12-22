@@ -1,0 +1,100 @@
+---
+layout: default 
+title: Hello World Blog
+---
+{% include header.html %}
+  <div class="project">
+    <img class="image" src="/assets/img/OS_930.png">
+
+    <div class="details">
+      <h2 class="title"><a href="#" itemprop="name">391OS Operating System</a></h2>
+      <p class="description" itemprop="description">An operating system written in C and x86 assembly. Winner of a semester-long OS design competition at University of Illinois at Urbana Champaign.</p>
+      <div class="overview">
+        <ul class="elements" itemprop="about">
+            <li>Partially ported for Raspberry Pi(ARMv7), including interrupt emulation and syscalls.</li>
+            <li>Adequate video buffer for three virtualized terminal windows and supports up to four nested shells.</li>
+            <li>Pre-emptive multitasking allows programs such as grep, cat and paint to run in different terminals.</li>
+        </ul>
+        <a class="anchor" href="https://github.com/yigh/OperatingSystem" target="_blank" itemprop="url">View on Github</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="project">
+    <img class="image" src="/assets/img/MAL_930.png">
+
+  <div class="details">
+    <h2 class="title"><a href="#" itemprop="name">Malware Packer Classififier</a></h2>
+    <p class="description" itemprop="description">Using SVM to classify executabled based on the packer used on it.</p>
+
+  
+    <div class="overview">
+      <ul class="elements" itemprop="about">
+                    <li>Averaged 97% accuracy with polynomial, rbf kernels.</li>
+                    <li>Verified accuracy with testing set of size 6011.</li>
+      </ul>
+      <a class="anchor" href="https://github.com/yigh" target="_blank" itemprop="url">View on Github</a>
+    </div>
+  </div>
+</div>
+  <div class="project">
+    <img class="image" src="/assets/img/CV_930.png">
+
+    <div class="details">
+      <h2 class="title"><a href="#" itemprop="name">Webcam Finger Detector</a></h2>
+      <p class="description" itemprop="description">A computer vision module written in python for a rock-paper-scissors game.</p>
+
+      <div class="overview">
+        <ul class="elements" itemprop="about">
+              <li>Applies a gaussian blur, and converts the resulting RGB image to HSV color format.</li>
+              <li>Portions of the image outside of a HSV threshold are discarded.</li>
+              <li>We find the contours of the remaining image.</li>
+              <li>Convex hulls are calculated for the contours. </li>
+              <li>Hull defects with angles smaller than 90 degrees are counted as fingers.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="project">
+    <img class="image" src="/assets/img/ROG_930.png">
+
+    <div class="details">
+      <h2 class="title"><a href="#" itemprop="name">A Rogue in Siebel - Nethack Clone</a></h2>
+      <p class="description" itemprop="description">A dungeon crawling RPG game written in C++, modeled after a famous game called Nethack (which is turn is modeled after the grand-daddy of all dungeon crawlers, Rogue)</p>
+
+  
+    <div class="overview">
+      <ul class="elements" itemprop="about">
+        <li>Dynamically generated maps using BST trees. Guarantees all rooms are connected.</li>
+        <li>Allows third-party defined monsters and AI modules to run alongside monster and NPC modules.</li>
+        <li>Implements game saves by serializing important structures and RNG seeds to disk.</li>
+     </ul>
+     <a class="anchor" href="https://github.com/yigh/Roguelike-In-Siebel" target="_blank" itemprop="url">View on Github</a><br>
+     <a class="anchor" href="https://www.dropbox.com/s/6c0x3yif1qb64fg/Roguelike-In-Siebel.tar.gz?dl=1" target="_blank" itemprop="url">Download and Play (~3Mb)</a>
+    </div>
+  </div>
+</div>
+
+<div class="project">
+  <img class="image" src="/assets/img/PreReq_930.jpg"></span>
+  <div class="details">
+    <h2 class="title"><a href="http://prereq.web.engr.illinois.edu/" target="_blank" itemprop="name">Prerequisite Knowledge Recommender</a></h2>
+    <p class="description" itemprop="description">This webapp suggests prerequisite skills necessary for mastering any subject.</p>
+  
+    <div class="overview">
+      <ul class="elements" itemprop="about">
+              <li>Generates prerequisites by crawling syllabi of top universities and by parsing textbooks.</li>
+              <li>Custom MVC url parser and router made in PHP.</li>
+        <li>Realtime text autocomplete for searching operations.</li>
+        <li>References Wikipedia to verify the authenticity of user-inputs.</li>
+      </ul>
+          <a class="anchor" href="https://github.com/yigh/Prereq" target="_blank" itemprop="url">View on Github</a>
+          <br>
+      <a class="anchor" href="http://prereq.web.engr.illinois.edu/" target="_blank" itemprop="url">Visit Site</a>
+    </div>
+  </div>
+  </div>
+</div>
+</body>
+</html>

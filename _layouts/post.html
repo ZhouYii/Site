@@ -1,0 +1,18 @@
+---
+layout: post
+---
+{% include header.html %}
+  <div id="content">
+    <section id="main" class="group">
+      <span id="post_title">{{page.title}}</span>
+      <span id="date">{{page.date | date: "%d-%m-%Y"}}</span>
+      <p id="buf"></p>
+      {{content}}
+      <div>
+        <a href="/">Back Home</a>
+      </div>
+    </section>
+  </div>
+</div>
+</body>
+</html>
