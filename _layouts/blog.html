@@ -7,17 +7,6 @@ title: Hello World Blog
     <section id="main" class="group">
       <ul>
         <div class="blog-category">
-            <p class="header" id="category">The Rest</p>
-            {% for post in site.posts %}
-            {% if post.tag == "normal" %}
-              <li>
-                <span class="post-date">{{ post.date | date_to_string }}</span>
-                <a href="{{ post.url }}">{{ post.title }} </a>
-              </li>
-            {% endif %}
-            {% endfor %}
-        </div>
-        <div class="blog-category">
             <p class="header" id="category">Distributed Systems</p>
             {% for post in site.posts %}
             {% if post.tag == "distributed" %}
@@ -39,7 +28,7 @@ title: Hello World Blog
             {% endif %}
             {% endfor %}
         </div>
-        <div id="book-col" class="blog-category">
+        <div class="blog-category">
             <p class="header" id="category">Books</p>
             {% for post in site.posts %}
             {% if post.tag == "book" %}
@@ -47,8 +36,29 @@ title: Hello World Blog
             {% endif %}
             {% endfor %}
         </div>
+        <div class="blog-category">
+            <p class="header" id="category">The Rest</p>
+            {% for post in site.posts %}
+            {% if post.tag == "normal" %}
+              <li>
+                <span class="post-date">{{ post.date | date_to_string }}</span>
+                <a href="{{ post.url }}">{{ post.title }} </a>
+              </li>
+            {% endif %}
+            {% endfor %}
+        </div>
+
+        <div class="blog-category">
+                <p class="header" id="category">Cool Stuff</p>
+                <ul><li>
+                  <a href="https://www.youtube.com/watch?v=8XCWP4pODbs">Google tech talk about meditation</a><br></li><li>
+                  <a href="https://www.youtube.com/watch?v=_UJlNRODZHA&t=4m5s">Tim Wise: colorblind model of race relations</a><br></li><li>
+                  <a href="https://www.youtube.com/watch?v=Ks-_Mh1QhMc&feature=youtube_gdata">Amy Cuddy: physiological changes using body posture</a></li></ul>
+        </div>
+
       </ul>
       <div>
+
       </div>
     </section>
   </div>

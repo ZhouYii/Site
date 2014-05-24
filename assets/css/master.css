@@ -3,7 +3,28 @@
  */
 
 /* mini-reset. */
+.details {
+  position:relative;
+  float:right;
+  width:24%;
+  margin-left:3%;
+  padding-top:3%;
+  line-height:1.5;
+}
 
+.project {
+  position: static;
+  padding-bottom:3%;
+}
+
+.image {
+  position:relative;
+  float:left;
+  width:72%;
+  margin-top:1.5%;
+  border-width:6.5px;
+  border-style:solid;
+}
 h1, h2, h3, h4, h5, div, p, ul, li, section {
   margin: 0;
   padding: 0;
@@ -15,16 +36,14 @@ h1, h2, h3, h4, h5, div, p, ul, li, section {
   float:right;
   margin-left: 3%;
 }
+
 .blog-category {
   position:relative;
-  width:27%;
+  width:32%;
   float:left;
   margin:0.5%;
 }
 
-#book-col {
-  width:15%;
-}
 .book-img {
   max-width:48%;
   margin:0.5%;
